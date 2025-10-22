@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const faqs = [
   {
     title: "How do bees fly?",
@@ -25,7 +27,12 @@ function Accordion({ data }) {
   return (
     <div className="accordion">
       {data.map((el, index) => (
-        <AccordionItem title={el.title} text={el.text} number={index} />
+        <AccordionItem
+          key={el.title}
+          title={el.title}
+          text={el.text}
+          number={index}
+        />
       ))}
     </div>
   );
