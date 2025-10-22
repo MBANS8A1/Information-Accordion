@@ -22,12 +22,18 @@ function App() {
 }
 
 function Accordion({ data }) {
-  return <div className="accordion">TODO</div>;
+  return (
+    <div className="accordion">
+      {data.map((el, index) => (
+        <AccordionItem title={el.title} text={el.text} number={index} />
+      ))}
+    </div>
+  );
 }
 
 function AccordionItem({ number, title, text }) {
   <div className="item">
-    <p className="number">{number}</p>
+    <p className="number">{number < 9 ? `0${number + 1}` : number + 1}</p>
     <p className="title">{title}</p>
     <p className="icon">-</p>
     <div className="content-box">{text}</div>
