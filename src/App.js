@@ -14,11 +14,15 @@ const faqs = [
 ];
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Accordion data={faqs} />
+    </div>
+  );
 }
 
-function Accordion() {
-  return <div>TODO</div>;
+function Accordion({ data }) {
+  return <div className="accordion">TODO</div>;
 }
 
 function AccordionItem({ number, title, text }) {
