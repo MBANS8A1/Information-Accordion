@@ -6,5 +6,8 @@ function Accordion() {
   return <div>TODO</div>;
 }
 
-function AccordionItem({ number, title, text }) {}
+function AccordionItem({ number, title, text }) {
+  <div className="item"></div>;
+}
+
 export default App;
