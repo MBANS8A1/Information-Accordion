@@ -45,7 +45,7 @@ function AccordionItem({ number, title, text }) {
   function handleToggle() {
     setIsOpen((isOpen) => !isOpen);
   }
-  <div className="item" onClick={handleToggle}>
+  <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
     <p className="number">{number < 9 ? `0${number + 1}` : number + 1}</p>
     <p className="title">{title}</p>
     <p className="icon">{isOpen ? "-" : "+"}</p>
