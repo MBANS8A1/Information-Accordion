@@ -7,7 +7,11 @@ function Accordion() {
 }
 
 function AccordionItem({ number, title, text }) {
-  <div className="item"></div>;
+  <div className="item">
+    <p className="number">{number}</p>
+    <p className="text">{text}</p>
+    <p className="icon">-</p>
+  </div>;
 }
 
 export default App;
