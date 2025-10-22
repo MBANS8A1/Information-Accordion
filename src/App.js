@@ -8,7 +8,8 @@ function Accordion() {
 
 function AccordionItem({ number, title, text }) {
   <div className="item">
-    <p className="number">{number}</p>
+    d<p className="number">{number}</p>
+    <p className="text">{title}</p>
     <p className="icon">-</p>
   </div>;
 }
