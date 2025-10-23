@@ -14,6 +14,10 @@ const faqs = [
     title: "How easy is it to import African herbs and spices into the UK?",
     text: "Importing African spices and herbs into the UK in 2025 is possible but involves several administrative steps and regulatory checks. You’ll need to clear customs declarations (via HM Revenue & Customs) and determine whether your goods are classed as “plant products” requiring phytosanitary/pre‑health certification.You’ll also need to make sure packaging, labelling (e.g., country of origin, ingredients, allergens) and food‑safety standards are met, and check whether any import licences or additional certificates are required. It is doable, but you’ll want to budget time for compliance and possibly extra costs.",
   },
+  {
+    title: "What is the best programming language to learn in 2025?",
+    text: "In 2025, Python remains the best programming language to learn for most people due to its versatility, readability, and massive ecosystem. It’s dominant in fields like AI, data science, web development, and automation, and it has one of the most supportive communities. However, if your focus is on web development, JavaScript (and TypeScript) is essential; for high-performance systems or game development, C++ or Rust are excellent; and for mobile apps, Kotlin (Android) or Swift (iOS) are top choices. Still, starting with Python offers the broadest foundation and fastest path to practical projects in 2025.",
+  },
 ];
 
 function App() {
