@@ -29,7 +29,7 @@ function App() {
 }
 
 function Accordion({ data }) {
-  const [currOpen, setCurrOpen] = useState(1);
+  const [currOpen, setCurrOpen] = useState(null);
 
   return (
     <div className="accordion">
@@ -52,7 +52,7 @@ function AccordionItem({ number, title, text, currOpen, onOpen }) {
   const isOpen = number === currOpen;
 
   function handleToggle() {
-    // setIsOpen((isOpen) => !isOpen);
+    onOpen(number);
   }
   return (
     <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
