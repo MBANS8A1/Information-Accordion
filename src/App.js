@@ -53,7 +53,7 @@ function AccordionItem({ number, title, currOpen, onOpen, children }) {
   const isOpen = number === currOpen;
 
   function handleToggle() {
-    onOpen(number);
+    onOpen(isOpen ? null : number);
   }
   return (
     <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
