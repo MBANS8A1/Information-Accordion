@@ -35,6 +35,8 @@ function Accordion({ data }) {
     <div className="accordion">
       {data.map((el, index) => (
         <AccordionItem
+          currOpen={currOpen}
+          onOpen={setCurrOpen}
           key={el.title}
           title={el.title}
           text={el.text}
